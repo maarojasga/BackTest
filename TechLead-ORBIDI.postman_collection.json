@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "31850677-f5a9-416b-b31f-a6145f4b3373",
+		"name": "TechLead-ORBIDI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25235186"
+	},
+	"item": [
+		{
+			"name": "Create contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@orbidi.com\",\r\n  \"firstname\": \"Test\",\r\n  \"lastname\": \"Orbidi\",\r\n  \"phone\": \"(322) 123-4567\",\r\n  \"website\": \"orbidi.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/create-contact/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create-contact",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sync contacts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/sync-contacts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sync-contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
